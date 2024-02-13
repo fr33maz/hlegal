@@ -1,0 +1,11 @@
+@forward "variables";
+@import url("./_variables.scss");
+body {
+    font-family: "Montserrat";
+}
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 37px;
+}
+
