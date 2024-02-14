@@ -4,8 +4,33 @@ body {
     font-family: "Montserrat";
 }
 h1 {
+    background-image: linear-gradient(118.16deg, rgb(240, 20, 90) 10.24%, rgb(239, 128, 128) 93.344%);
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
     font-size: 30px;
     font-weight: 700;
     line-height: 37px;
+    background-size: cover;
 }
-
+p {
+    font-size: 16px;
+    line-height: 26px;
+}
+a {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+    color: var(--link);
+    &:hover {
+        color: var(--link-hover);
+        padding-bottom: 6px;
+        border-bottom: solid 4px;
+    }
+    &.active {
+        color: var(--link-hover);
+        padding-bottom: 6px;
+        border-bottom: solid 4px;
+    }
+}

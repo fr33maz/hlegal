@@ -1,4 +1,13 @@
 :root {
-    --heading: linear-gradient(118.16deg, rgb(240, 20, 90),rgb(239, 128, 128));
-    --link: #24A3FF;
+    --heading: linear-gradient(118.16deg, rgb(240, 20, 90), rgb(239, 128, 128));
+    --link: #24a3ff;
+    --paragraph-dark: #000;
+    --link-hover: #f0145a;
+    --bg-light: #fff;
+    --bg-dark: linear-gradient(
+        208.37deg,
+        rgb(50, 50, 100) 15.026%,
+        rgb(50, 50, 100) 56.463%,
+        rgb(100, 62, 114) 84.207%
+    );
 }
