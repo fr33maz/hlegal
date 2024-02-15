@@ -1,0 +1,33 @@
+<svg width="64.000000" height="64.000000" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip22728_7137">
+			<rect width="64.000000" height="64.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<linearGradient id="paint_linear_22728_7133_0" x1="32.016720" y1="35.076172" x2="32.016720" y2="57.999710" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#EF8080"/>
+			<stop offset="1.000000" stop-color="#F0145A"/>
+		</linearGradient>
+		<linearGradient id="paint_linear_22728_7134_0" x1="32.016609" y1="35.076172" x2="32.016609" y2="43.720207" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#EF8080"/>
+			<stop offset="1.000000" stop-color="#F0145A"/>
+		</linearGradient>
+		<linearGradient id="paint_linear_22728_7135_0" x1="32.016689" y1="15.142578" x2="32.016689" y2="32.986652" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#EF8080"/>
+			<stop offset="1.000000" stop-color="#F0145A"/>
+		</linearGradient>
+		<linearGradient id="paint_linear_22728_7136_0" x1="32.016674" y1="5.955078" x2="32.016674" y2="13.138414" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#EF8080"/>
+			<stop offset="1.000000" stop-color="#F0145A"/>
+		</linearGradient>
+	</defs>
+	<rect width="64.000000" height="64.000000" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip22728_7137)">
+		<path d="M53.4513 35.0762L53.4513 52.3711C53.4513 55.4648 51.027 58 48.0632 58L15.9702 58C13.0065 58 10.5822 55.4648 10.5822 52.3711L10.5822 35.0762L27.2482 35.0762L27.2482 42.5879L32.0167 45.7207L36.7852 42.5879L36.7852 35.0762L53.4513 35.0762Z" fill="url(#paint_linear_22728_7133_0)" fill-opacity="1.000000" fill-rule="evenodd"/>
+		<path d="M28.9185 35.0762L28.9185 41.6855L32.0166 43.7207L35.1147 41.6855L35.1147 35.0762L28.9185 35.0762Z" fill="url(#paint_linear_22728_7134_0)" fill-opacity="1.000000" fill-rule="evenodd"/>
+		<path d="M12.0734 15.1426L51.96 15.1426C53.8423 15.1426 55.3808 16.8516 55.3808 18.9375L55.3808 29.1914C55.3808 31.2793 53.8423 32.9863 51.96 32.9863L36.314 32.9863L27.7194 32.9863L12.0734 32.9863C10.191 32.9863 8.65259 31.2793 8.65259 29.1914L8.65259 18.9375C8.65259 16.8516 10.191 15.1426 12.0734 15.1426Z" fill="url(#paint_linear_22728_7135_0)" fill-opacity="1.000000" fill-rule="evenodd"/>
+		<path d="M23.7119 5.95508L40.3215 5.95508C41.8646 5.95508 43.1274 7.21875 43.1274 8.76172L43.1274 13.1387L39.5699 13.1387L39.5699 10.5508C39.5699 9.85352 38.9998 9.28125 38.3024 9.28125L25.731 9.28125C25.0336 9.28125 24.4634 9.85352 24.4634 10.5508L24.4634 13.1387L20.9059 13.1387L20.9059 8.76172C20.9059 7.21875 22.1688 5.95508 23.7119 5.95508Z" fill="url(#paint_linear_22728_7136_0)" fill-opacity="1.000000" fill-rule="evenodd"/>
+	</g>
+</svg>
