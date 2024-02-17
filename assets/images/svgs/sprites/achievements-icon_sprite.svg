@@ -18,12 +18,12 @@
 How to use:
 
 <svg class="icon-32px achievements_clients">
-    <use xlink:href="#achievemets_clients"></use>
+    <use xlink:href="./assets/images/svgs/sprites/achievements-icon_sprite.svg#achievements_clients"></use>
 </svg>
 <svg class="icon-32px achievements_experience">
-    <use xlink:href="#achievemets_experience"></use>
+    <use xlink:href="./assets/images/svgs/sprites/achievements-icon_sprite.svg#achievements_experience"></use>
 </svg>
 <svg class="icon-32px achievements_probono">
-    <use xlink:href="#achievemets_probono"></use>
+    <use xlink:href="./assets/images/svgs/sprites/achievements-icon_sprite.svg#achievements_probono"></use>
 </svg>
 -->
