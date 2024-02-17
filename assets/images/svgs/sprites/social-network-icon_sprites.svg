@@ -16,12 +16,12 @@
 How to use:
 
 <svg class="icon-24px social-network_facebook">
-    <use xlink:href="#social-network_facebook"></use>
+    <use xlink:href="./assets/images/svgs/sprites/social-network-icon_sprites.svg#social-network_facebook"></use>
 </svg>
 <svg class="icon-24px social-network_linkedIn">
-    <use xlink:href="#social-network_linkedIn"></use>
+    <use xlink:href="./assets/images/svgs/sprites/social-network-icon_sprites.svg#social-network_linkedIn"></use>
 </svg>
 <svg class="icon-24px social-network_telegram">
-    <use xlink:href="#social-network_telegram"></use>
+    <use xlink:href="./assets/images/svgs/sprites/social-network-icon_sprites.svg#social-network_telegram"></use>
 </svg>
 -->
