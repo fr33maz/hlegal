@@ -1,7 +1,7 @@
 .header {
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 60% 1fr;
     &__checkbox:checked + .header__label {
         background-color: var( --bg-link-mobile-hover);
     }
@@ -101,6 +101,7 @@
         display: flex;
         &-image {
             width: 69px;
+            height: 32px;
         }
         &-text {
             display: flex;
