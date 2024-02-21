@@ -1,0 +1,81 @@
+@mixin gradient-text_color {
+    background: linear-gradient(118.16deg, rgb(240, 20, 90) 10.24%, rgb(239, 128, 128) 93.344%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin fonts-hero {
+    background: linear-gradient(118.16deg, rgb(240, 20, 90), rgb(239, 128, 128));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: 0%;
+}
+
+@mixin fonts-h2 {
+    color: #323264;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 37px;
+    letter-spacing: 0%;
+}
+
+@mixin fonts-h3 {
+    color: #323264;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0%;
+}
+
+@mixin fonts-h3-caps {
+    color: rgb(75, 40, 222);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+@mixin fonts-h4 {
+    color: #323264;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0%;
+}
+
+@mixin fonts-par {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0%;
+}
+
+@mixin fonts-list {
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0%;
+}
+
+@mixin fonts-link {
+    color:#24A3FF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0%;
+}
+
+@mixin fonts-link-hover {
+    color: #F0145A;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0%;
+}
