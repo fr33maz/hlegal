@@ -2,6 +2,7 @@
     .wrapper {
         padding: 50px 60px 0;
     }
+  
     .header {
         &__checkbox:checked {
             ~ a {
@@ -54,7 +55,7 @@
             width: 100%;
             margin-bottom: 33px;
             align-items: center;
-            background-color: white;
+            background-color: transparent;
             justify-content: left;
             padding: 0;
             &-adress {
@@ -118,6 +119,18 @@
             &-image {
                 width: 130px;
                 height: 60px;
+            }
+        }
+    }
+    .b__color {
+        &-top-tel-color {
+            &::after {
+                background-color: white;
+            }
+        }
+        &-top-adress {
+            &::after, &::before {
+                background-color: white;
             }
         }
     }
