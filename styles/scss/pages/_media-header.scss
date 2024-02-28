@@ -2,7 +2,7 @@
     .wrapper {
         padding: 50px 60px 0;
     }
-  
+
     .header {
         &__checkbox:checked {
             ~ a {
@@ -128,8 +128,15 @@
                 background-color: white;
             }
         }
+        &-bottom-link {
+            color: var(--text-light);
+            &--selected {
+                color: var(--link-selected);
+            }
+        }
         &-top-adress {
-            &::after, &::before {
+            &::after,
+            &::before {
                 background-color: white;
             }
         }
