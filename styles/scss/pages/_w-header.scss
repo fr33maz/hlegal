@@ -1,9 +1,26 @@
+.w__color {
+    &-logo-text {
+        color: var(--bg-mobile-menu);
+    }
+    &-top-header {
+        background-color: var(--bg-header-top);
+    }
+    &-top-link-color {
+        color: var(--text-header-link);
+    }
+    &-top-tel-color {
+        color: var(--text-header-link);
+    }
+    &-burger {
+        background-color: black;
+    }
+}
 .header {
     position: relative;
     display: grid;
     grid-template-columns: 60% 1fr;
-    &__checkbox:checked + .header__label {
-        background-color: var( --bg-link-mobile-hover);
+    &__checkbox:checked + .w__color-header-label {
+        background-color: var(--bg-link-mobile-hover);
     }
     &__checkbox:checked {
         ~ a {
@@ -59,21 +76,20 @@
         padding: 9px 7px;
         border-radius: 8px;
         align-self: center;
-        margin:5px 15px 0 0;
+        margin: 5px 15px 0 0;
 
         &-burger {
             position: relative;
             display: block;
             width: 100%;
             height: 2.5px;
-            background-color: black;
             &::after {
                 content: "";
                 width: 100%;
                 height: 2.5px;
                 display: block;
                 top: 6px;
-                background-color: black;
+                background-color: inherit;
                 position: absolute;
             }
             &::before {
@@ -82,7 +98,7 @@
                 height: 2.5px;
                 display: block;
                 top: 12px;
-                background-color: black;
+                background-color: inherit;
                 position: absolute;
             }
         }
@@ -108,7 +124,6 @@
             font-size: 20px;
             line-height: 1.2;
             font-weight: 400;
-            color: var(--bg-mobile-menu);
             &::before {
                 content: url("../../../assets/images/svgs/header-slash-mobile.svg");
                 padding: 0 4px;
@@ -135,7 +150,6 @@
     &__language-container {
         padding: 13px 15px;
         z-index: 5;
-        background-color: var(--bg-header-top);
         grid-row: 1/2;
         grid-column: 1/3;
         display: flex;
@@ -150,7 +164,6 @@
                 &-link {
                     font-size: 12px;
                     line-height: 15px;
-                    color: var(--text-header-link);
                     padding: 5px 7px;
                     border-radius: 8px;
                     &--selected {
@@ -170,12 +183,9 @@
         &-tel {
             font-size: 16px;
             line-height: 20px;
-            color: var(--text-header-link);
         }
         &-facebook-link {
             display: none;
-            &-img {
-            }
         }
     }
 }
