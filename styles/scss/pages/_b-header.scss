@@ -1,0 +1,29 @@
+.b__color {
+    &-burger {
+        background-color: var(--text-light);
+    }
+    &-header-label {
+        background-color: var(--bg-mobile-menu);
+        border: var(--text-light) 1px dashed;
+        border-radius: 0;
+    }
+    &-top-header {
+        background-color: var(--bg-burger-dark);
+    }
+    &-logo-text {
+        color: var(--text-light);
+    }
+    &-top-link-color {
+        color: var(--text-light);
+    }
+    &-top-tel-color {
+        color: var(--text-light);
+      
+    }
+    &-bottom-link {
+        &--selected {
+            color: var(--link-selected);
+        }
+    }
+}
+
