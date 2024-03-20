@@ -17,4 +17,22 @@
         rgb(50, 50, 100) 56.463%,
         rgb(100, 62, 114) 84.207%
     );
+
+    // Colors
+    --main_color: #323264;
+    --main-alt_color: #46466E;
+    --main-soft_color: #686887;
+    --accent_color: #F0145A;
+    --active-regular_color: #24A3FF;
+    --active-hover_color: #0085FF;
+    --active_color: #006CCF;
+    --grey-bg_color: #F5F5FA;
+    --grey-alt_color: #EDEDF7;
+    --grey-text_color: #B3B3BA;
+    --grey-separator_color: #E6E6F0;
+        //background gradients
+    --gradient_color: linear-gradient(135.00deg, rgb(50, 50, 100) 0%,rgb(50, 50, 100) 73.958%,rgb(165, 75, 95) 100%);
+    --gradient-soft_color: linear-gradient(23.75deg, rgb(50, 50, 100) 9.159%,rgb(50, 50, 100) 51.115%,rgb(122, 66, 94) 92.03%);
+    --gradient-red_color: linear-gradient(-49.87deg, rgb(240, 20, 90) 8.512%,rgb(105, 50, 100) 73.404%);
+    --gradient-supersoft_color: linear-gradient(208.37deg, rgb(50, 50, 100) 7.87%,rgb(50, 50, 100) 58.098%,rgb(100, 62, 114) 91.728%);
 }
