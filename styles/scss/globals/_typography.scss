@@ -1,7 +1,6 @@
 @forward "variables";
-@import url("./_variables.scss");
 body {
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
 }
 h1 {
     background-image: linear-gradient(118.16deg, rgb(240, 20, 90) 10.24%, rgb(239, 128, 128) 93.344%);
@@ -23,14 +22,6 @@ a {
     line-height: 29px;
     font-weight: 700;
     color: var(--link);
-    &:hover {
-        color: var(--link-hover);
-        padding-bottom: 6px;
-        border-bottom: solid 4px;
-    }
-    &.active {
-        color: var(--link-hover);
-        padding-bottom: 6px;
-        border-bottom: solid 4px;
-    }
+
+
 }
