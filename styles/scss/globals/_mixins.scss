@@ -13,6 +13,38 @@
   line-height: $lh;
 }
 
+//font-size, line-height, letter-spacing
+@mixin font-fs-lh-ls($fs, $lh, $ls) {
+    font-size: $fs;
+    line-height: $lh;
+    letter-spacing: $ls;
+}
+
+//font-weight, line-height, letter-spacing
+@mixin font-fw-lh-ls($fw, $lh, $ls) {
+    font-weight: $fw;
+    line-height: $lh;
+    letter-spacing: $ls;
+}
+
+//font-size, line-height
+@mixin font-fs-lh($fs, $lh) {
+    font-size: $fs;
+    line-height: $lh;
+}
+
+//font-size, font-weight
+@mixin font-fs-fw($fs, $fw) {
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+//line-height, letter-spacing
+@mixin font-lh-ls($lh, $ls) {
+    line-height: $lh;
+    letter-spacing: $ls;
+}
+
 @mixin gradient-text_color {
     background: linear-gradient(118.16deg, rgb(240, 20, 90) 10.24%, rgb(239, 128, 128) 93.344%);
     -webkit-background-clip: text;
