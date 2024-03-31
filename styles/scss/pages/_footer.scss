@@ -7,6 +7,10 @@
     padding: 0 30px 30px;
     margin: 0 auto;
   }
+  hr {
+    margin: 0;
+    border: 2px solid var(--grey-separator_color);
+  }
   &__list {
     display: flex;
     flex-direction: column;
