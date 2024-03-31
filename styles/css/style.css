@@ -597,11 +597,19 @@ a {
     padding: 50px 160px 0;
   }
 }
-@media screen and (min-width: 1920px) {
-  .main__wrapper {
-    width: 1720px;
-    margin: 0 auto;
-  }
+.main__wrapper {
+  max-width: 375px;
+  margin: 0 auto;
+}
+.main__sponsors-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 60px 0 29px;
+  color: var(--main_color);
 }
 .main__grid-of-sponsors {
   display: flex;
@@ -654,27 +662,11 @@ a {
 .main__grid-of-sponsors__big-device {
   display: none;
 }
-@media screen and (min-width: 1920px) {
-  .main__grid-of-sponsors__top-left {
-    border-radius: 12px 0 0 0;
-  }
-}
-@media screen and (min-width: 1920px) {
-  .main__grid-of-sponsors__top-right {
-    border-radius: 0 12px 0 0;
-  }
-}
-@media screen and (min-width: 1920px) {
-  .main__grid-of-sponsors__bottom-left {
-    border-radius: 0 0 0 12px;
-  }
-}
-@media screen and (min-width: 1920px) {
-  .main__grid-of-sponsors__bottom-right {
-    border-radius: 0 0 12px 0;
-  }
-}
+
 @media screen and (min-width: 768px) {
+  .main__wrapper {
+    max-width: 768px;
+  }
   .main__grid-of-sponsors {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -693,24 +685,40 @@ a {
   }
 }
 @media screen and (min-width: 1024px) {
+  .main__wrapper {
+    max-width: 1024px;
+  }
   .main__grid-of-sponsors {
-    display: grid;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto auto auto;
     height: 360px;
   }
   .main__grid-of-sponsors__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 1/4;
-    height: 120px;
-  }
-  .main__grid-of-sponsors__big-device {
-    display: flex;
   }
 }
-
+@media screen and (min-width: 1440px) {
+  .main__wrapper {
+    max-width: 1440px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .main__wrapper {
+    width: 1720px;
+  }
+  .main__grid-of-sponsors__top-left {
+    border-radius: 12px 0 0 0;
+  }
+  .main__grid-of-sponsors__top-right {
+    border-radius: 0 12px 0 0;
+  }
+  .main__grid-of-sponsors__bottom-left {
+    border-radius: 0 0 0 12px;
+  }
+  .main__grid-of-sponsors__bottom-right {
+    border-radius: 0 0 12px 0;
+  }
+}
 .footer {
   background-color: var(--grey-bg_color);
 }
