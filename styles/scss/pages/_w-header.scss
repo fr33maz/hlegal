@@ -15,6 +15,12 @@
         background-color: black;
     }
 }
+
+.wrapper {
+    max-width: 375px;
+    margin: 0 auto;
+}
+
 .header {
     position: relative;
     display: grid;

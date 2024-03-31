@@ -234,6 +234,11 @@ a {
   background-color: black;
 }
 
+.wrapper {
+  max-width: 375px;
+  margin: 0 auto;
+}
+
 .header {
   position: relative;
   display: grid;
@@ -420,7 +425,6 @@ a {
   .wrapper {
     max-width: 768px;
     padding: 50px 60px 0;
-    margin: 0 auto;
   }
   .header__checkbox:checked ~ a {
     opacity: 1;
