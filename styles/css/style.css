@@ -254,7 +254,7 @@ a {
   background-color: var(--bg-mobile-menu);
   opacity: 0.9;
   padding: 110px 8px 0;
-  background-image: url("../../../assets/images/svgs/logo-w.svg");
+  background-image: url("../../../hlegal/assets/images/svgs/logo-w.svg");
   background-size: 69px;
   background-repeat: no-repeat;
   background-position: 15px 61px;
@@ -340,7 +340,7 @@ a {
   font-weight: 400;
 }
 .header__logo-text::before {
-  content: url("../../../assets/images/svgs/header-slash-mobile.svg");
+  content: url("../../../hlegal/assets/images/svgs/header-slash-mobile.svg");
   padding: 0 4px;
 }
 .header__navigation {
@@ -526,7 +526,7 @@ a {
     line-height: 44px;
   }
   .header__logo-text::before {
-    content: url("../../../assets/images/svgs/header-slash-desktop.svg");
+    content: url("../../../hlegal/assets/images/svgs/header-slash-desktop.svg");
   }
   .header__logo-image {
     width: 130px;
