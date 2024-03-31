@@ -1,15 +1,15 @@
 :root {
     --heading: linear-gradient(118.16deg, rgb(240, 20, 90), rgb(239, 128, 128));
-    --link: #24a3ff;
+    --link: var(--active-regular_color);
     --paragraph-dark: #000;
-    --link-hover: #f0145a;
+    --link-hover: var(--accent_color);
     --bg-light: #fff;
-    --bg-mobile-menu: #323264;
-    --link-selected: #f0145a;
+    --bg-mobile-menu: var(--main_color);
+    --link-selected: var(--accent_color);
     --text-light: #fff;
-    --text-header-link: #b3b3ba;
-    --bg-link-mobile-hover: #e6e6f0;
-    --bg-header-top: #f5f5fa;
+    --text-header-link: var(--grey-text_color);
+    --bg-link-mobile-hover: var(--grey-separator_color);
+    --bg-header-top: var(--grey-bg_color);
     --bg-burger-dark: #f5f5fa33;
     --bg-dark: linear-gradient(
         208.37deg,
