@@ -597,6 +597,118 @@ a {
     padding: 50px 160px 0;
   }
 }
+.team-slider__wrapper {
+  max-width: 375px;
+  padding: 30px;
+  margin: 0 auto;
+}
+.team-slider__slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  background: var(--grey-alt_color);
+  margin: 0 0 30px;
+}
+.team-slider__profile-image {
+  border-radius: 12px 12px 0 0;
+}
+.team-slider__content {
+  padding: 30px;
+}
+.team-slider__details {
+  display: flex;
+  align-items: center;
+  margin: 0 0 5px;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.team-slider__details-arrow {
+  margin: 0.5px 2.5px;
+  max-height: 12px;
+}
+.team-slider__details:hover {
+  color: var(--accent_color);
+}
+.team-slider__title {
+  margin: 0 0 30px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 37px;
+  background: var(--heading);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.team-slider__profile-link, .team-slider__profile-rank {
+  color: var(--grey-text_color);
+}
+.team-slider__profile-link {
+  margin: 0 0 7px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+.team-slider__profile-link-arrow {
+  margin: 0.5px 2.5px;
+  max-height: 12px;
+}
+.team-slider__profile-link:hover {
+  color: var(--accent_color);
+}
+.team-slider__profile-rank {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.team-slider__ellipses {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.team-slider__ellipse {
+  display: block;
+  min-width: 16px;
+  min-height: 16px;
+  border-radius: 50%;
+  background: var(--active-regular_color);
+  opacity: 0.2;
+}
+.team-slider__ellipse.active {
+  opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .team-slider__wrapper {
+    max-width: 768px;
+    padding: 30px 60px;
+  }
+  .team-slider__title {
+    font-size: 38px;
+    line-height: 46px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .team-slider__wrapper {
+    max-width: 1024px;
+  }
+  .team-slider__slide {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .team-slider__wrapper {
+    max-width: 1440px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .team-slider__wrapper {
+    max-width: 1920px;
+    padding: 30px 160px;
+  }
+}
 .main__wrapper {
   max-width: 375px;
   margin: 0 auto;
@@ -608,7 +720,7 @@ a {
   letter-spacing: 1px;
   text-transform: uppercase;
   text-align: center;
-  padding: 60px 0 29px;
+  padding: 30px 0 29px;
   color: var(--main_color);
 }
 .main__grid-of-sponsors {
