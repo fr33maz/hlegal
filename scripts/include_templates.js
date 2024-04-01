@@ -1,7 +1,7 @@
 // add only file name into array "templateList". the file name equals id
 let templateList = [
     'b-header_template', 'w-header_template', 'footer_template', 'publications_template', 'main_grid-of-sponsors',
-    'publications_list_template'
+    'publications_list_template', 'team_slider_template'
 ];
 
 const BASEDIR = 'templates/';
