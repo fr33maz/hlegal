@@ -14,13 +14,13 @@
     @include font-fs-lh-ls(14px, 17px, 1px);
     text-transform: uppercase;
 
+    &-arrow {
+      margin: 0.5px 2.5px;
+      max-height: 12px;
+    }
     &:hover {
       color: var(--accent_color);
     }
-  }
-  img {
-    margin: 0.5px 2.5px;
-    max-height: 12px;
   }
   &__title {
     margin: 0 0 30px;
@@ -41,20 +41,22 @@
     &__item {}
   }
   &__cover {
-    min-width: 315px;
-    min-height: 200px;
+    //min-height: 200px;
     border-radius: 8px 8px 0 0;
-    &.cover {
-      &_1 {
-        background: url('../../../hlegal/assets/images/png/publication-list/cover_1_mw375px.png');
-      }
-      &_2 {
-        background: url('../../../hlegal/assets/images/png/publication-list/cover_2_mw375px.png');
-      }
-      &_3 {
-        background: url('../../../hlegal/assets/images/png/publication-list/cover_3_mw375px.png');
-      }
-    }
+    //background-size: cover;
+    //background-position: center;
+    //background-repeat: no-repeat;
+    //&.cover {
+    //  &_1 {
+    //    //background-image: url('../../../hlegal/assets/images/png/publication-list/cover_1_mw375px.png');
+    //  }
+    //  &_2 {
+    //    background-image: url('../../../hlegal/assets/images/png/publication-list/cover_2_mw375px.png');
+    //  }
+    //  &_3 {
+    //    background-image: url('../../../hlegal/assets/images/png/publication-list/cover_3_mw375px.png');
+    //  }
+    //}
   }
   &__content {
     padding: 30px;
