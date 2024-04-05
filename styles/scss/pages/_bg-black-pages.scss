@@ -1,5 +1,13 @@
 .bg-black-pages {
   position: relative;
+  overflow: hidden;
+  &__bg-symbol {
+    position: absolute;
+    height: 600px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
   &__gradient {
     background: linear-gradient(208.37deg, rgb(50, 50, 100) 2.27%, rgb(50, 50, 100) 59.377%, rgb(100, 62, 114) 97.614%);
     border-radius: 0 0 12px 12px;
