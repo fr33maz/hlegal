@@ -51,14 +51,9 @@
     -webkit-text-fill-color: transparent;
 }
 
-@mixin fonts-hero {
+@mixin fonts-hero($fs: 38px, $fw: 700, $lh: 46px, $ls: 0) {
     @include gradient-text_color;
-    background-clip: text;
-    text-fill-color: transparent;
-    font-size: 38px;
-    font-weight: 700;
-    line-height: 46px;
-    letter-spacing: 0;
+    @include font-fs-fw-lh-ls($fs, $fw, $lh, $ls);
 }
 
 @mixin fonts-h2($color: var(--main_color)) {
@@ -77,11 +72,9 @@
     letter-spacing: 0;
 }
 
-@mixin fonts-h3-caps($color: var(--main_color)) {
+@mixin fonts-h3-caps($color: var(--main_color), $fs: 16px, $fw: 700, $lh: 20px, $ls: 1px) {
     color: $color;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 20px;
+    @include font-fs-fw-lh-ls($fs, $fw, $lh, $ls);
     text-transform: uppercase;
 }
 
