@@ -1,0 +1,49 @@
+@use '../globals/mixins' as *;
+
+.grid-services {
+  //background-color: #323264;
+  &__wrapper {
+    max-width: 375px;
+    padding: 30px;
+    margin: 0 auto;
+  }
+  &__details {
+    display: flex;
+    align-items: center;
+    margin: 0 0 5px;
+    @include fonts-h3-caps($color: var(--active-regular_color), $fs: 14px, $lh: 17px, $ls: 1px);
+
+    &-arrow {
+      margin: 0.5px 2.5px;
+      max-height: 12px;
+    }
+    &:hover {
+      color: var(--accent_color);
+    }
+  }
+  &__title {
+    margin: 0 0 30px;
+    @include fonts-hero($fs: 30px, $lh: 37px);
+  }
+  &__icon {
+    margin: 0 0 30px;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &-detail {
+      @include fonts-link($fs: 22px, $fw: 700, $lh: 27px);
+
+      &:hover {
+        color: var(--accent_color);
+      }
+    }
+    &-description {
+      display: block;
+      margin: 15px 0 0;
+      @include fonts-par(var(--bg-light));
+    }
+  }
+}

@@ -1,0 +1,48 @@
+@use '../globals/mixins' as *;
+
+@media screen and (min-width: 768px) {
+  .grid-services {
+    &__wrapper {
+      max-width: 768px;
+      padding: 60px;
+    }
+    &__title {
+      @include font-fs-lh(38px, 46px);
+    }
+    &__content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, auto);
+      gap: 60px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid-services {
+    &__wrapper {
+      max-width: 1024px;
+    }
+    &__content {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, auto);
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .grid-services {
+    &__wrapper {
+      max-width: 1440px;
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .grid-services {
+    &__wrapper {
+      max-width: 1920px;
+      padding: 60px 160px;
+    }
+  }
+}
