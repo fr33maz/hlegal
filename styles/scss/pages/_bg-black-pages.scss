@@ -1,0 +1,21 @@
+.bg-black-pages {
+  &__gradient {
+    background: linear-gradient(208.37deg, rgb(50, 50, 100) 2.27%, rgb(50, 50, 100) 59.377%, rgb(100, 62, 114) 97.614%);
+    border-radius: 0 0 12px 12px;
+  }
+  &__decor-line- {
+    &first, &second {
+      margin: 0 auto;
+      height: 10px;
+      border-radius: 0 0 12px 12px;
+    }
+    &first {
+      width: calc(100% - 40px);
+      background-color: #CACADB;
+    }
+    &second {
+      width: calc(100% - 80px);
+      background-color: #E7E7F2;
+    }
+  }
+}
