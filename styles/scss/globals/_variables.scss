@@ -1,5 +1,6 @@
 :root {
     --heading: linear-gradient(118.16deg, rgb(240, 20, 90), rgb(239, 128, 128));
+    --heading-invert: linear-gradient(118.16deg, rgb(239, 128, 128),rgb(240, 20, 90));
     --link: var(--active-regular_color);
     --paragraph-dark: #000;
     --link-hover: var(--accent_color);
