@@ -37,9 +37,12 @@
     &__wrapper {
       max-width: 1024px;
     }
+    &__title {
+      margin: 245px auto 288px;
+    }
     &__content {
       flex-direction: row;
-      padding: 60px;
+      padding: 60px 60px 0;
 
       & > li:nth-child(n+2) {
         padding: unset;
@@ -62,6 +65,18 @@
   }
 }
 
-@media screen and (min-width: 1440px) {}
+@media screen and (min-width: 1440px) {
+  .homepage-info {
+    &__wrapper {
+      max-width: 1440px;
+    }
+    &__title {
+      margin: 261px auto 304px;
+    }
+    &__content {
+      padding: 60px 180px 0;
+    }
+  }
+}
 
 @media screen and (min-width: 1920px) {}
