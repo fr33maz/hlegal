@@ -51,10 +51,10 @@
     justify-content: center;
     gap: 30px;
 
-    li:nth-child(n+2) {
+    & > li:nth-child(n+2) {
       padding: 0 30px;
     }
-    li:last-child {
+    & > li:last-child {
       display: flex;
       flex-direction: column;
       gap: 30px;
