@@ -79,4 +79,16 @@
   }
 }
 
-@media screen and (min-width: 1920px) {}
+@media screen and (min-width: 1920px) {
+  .homepage-info {
+    &__wrapper {
+      max-width: 1920px;
+    }
+    &__title {
+      margin: 361px auto 404px;
+    }
+    &__content {
+      padding: 60px 280px 0;
+    }
+  }
+}
