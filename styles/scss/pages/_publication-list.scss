@@ -16,10 +16,15 @@
 
     &-arrow {
       margin: 0.5px 2.5px;
-      max-height: 12px;
+      width: 7px;
+      height: 11px;
+      background-image: url("../../assets/images/png/arrow_triangle_right_4.5x9.png");
     }
     &:hover {
       color: var(--accent_color);
+    }
+    &:hover > &-arrow {
+      background-image: url("../../assets/images/png/arrow_triangle_right_accent_4.5x9.png");
     }
   }
   &__title {

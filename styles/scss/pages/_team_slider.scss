@@ -29,10 +29,15 @@
 
     &-arrow {
       margin: 0.5px 2.5px;
-      max-height: 12px;
+      width: 7px;
+      height: 11px;
+      background-image: url("../../assets/images/png/arrow_triangle_right_4.5x9.png");
     }
     &:hover {
       color: var(--accent_color);
+    }
+    &:hover > &-arrow {
+      background-image: url("../../assets/images/png/arrow_triangle_right_accent_4.5x9.png");
     }
   }
   &__title {
@@ -49,10 +54,6 @@
     margin: 0 0 7px;
     @include font-fs-fw-lh(16px, 700, 20px);
 
-    &-arrow {
-      margin: 0.5px 2.5px;
-      max-height: 12px;
-    }
     &:hover {
       color: var(--accent_color);
     }
