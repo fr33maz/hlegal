@@ -40,12 +40,13 @@
                 height: 100vh;
                 width: 100vw;
                 background-color: var(--bg-mobile-menu);
-                opacity: 0.9;
+                opacity: 1;
                 padding: 110px 8px 0;
                 background-image: url("../../../hlegal/assets/images/svgs/logo-w.svg");
                 background-size: 69px;
                 background-repeat: no-repeat;
                 background-position: 15px 61px;
+                z-index: 1;
 
                 > .header__navigation-list {
                     margin-top: 30px;

@@ -1,0 +1,94 @@
+@use '../globals/mixins' as *;
+
+@media screen and (min-width: 768px) {
+  .homepage-info {
+    &__wrapper {
+      max-width: 768px;
+    }
+    &__title {
+      max-width: unset;
+      padding: 0 60px;
+      margin: 275px auto 416px;
+
+      &-description {
+        @include font-fs-lh(30px, 37px);
+      }
+    }
+    &__content {
+      gap: 60px;
+
+      & > li:nth-child(n+2) {
+        padding: 0 60px;
+      }
+    }
+    &__links {
+      &-list {
+        padding: 60px 0 0 60px;
+      }
+      &-item a {
+        @include font-fs-lh(38px, 46px);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .homepage-info {
+    &__wrapper {
+      max-width: 1024px;
+    }
+    &__title {
+      margin: 245px auto 288px;
+    }
+    &__content {
+      flex-direction: row;
+      padding: 60px 60px 0;
+
+      & > li:nth-child(n+2) {
+        padding: unset;
+      }
+    }
+    &__dividing-line {
+      margin: 0;
+      border: unset;
+      border-right: 4px solid var(--bg-light);
+      height: 100%;
+      opacity: 0.3;
+    }
+    &__links {
+      &-list {
+        flex-direction: column;
+        align-items: end;
+        padding: unset;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .homepage-info {
+    &__wrapper {
+      max-width: 1440px;
+    }
+    &__title {
+      margin: 261px auto 304px;
+    }
+    &__content {
+      padding: 60px 180px 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .homepage-info {
+    &__wrapper {
+      max-width: 1920px;
+    }
+    &__title {
+      margin: 361px auto 404px;
+    }
+    &__content {
+      padding: 60px 280px 0;
+    }
+  }
+}

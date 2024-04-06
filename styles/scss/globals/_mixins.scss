@@ -45,8 +45,8 @@
     letter-spacing: $ls;
 }
 
-@mixin gradient-text_color {
-    background: var(--heading);
+@mixin gradient-text_color($color: var(--heading)) {
+    background: $color;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -56,12 +56,12 @@
     @include font-fs-fw-lh-ls($fs, $fw, $lh, $ls);
 }
 
-@mixin fonts-h2($color: var(--main_color)) {
+@mixin fonts-h2($color: var(--main_color), $fs: 30px, $fw: 700, $lh: 37px, $ls: 0) {
     color: $color;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 37px;
-    letter-spacing: 0;
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+    letter-spacing: $ls;
 }
 
 @mixin fonts-h3($color: var(--main_color)) {

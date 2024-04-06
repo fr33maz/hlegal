@@ -1,6 +1,7 @@
 // add only file name into array "templateList". the file name equals id
+// excluded: 'b-header_template', 'w-header_template',
 let templateList = [
-    'b-header_template', 'w-header_template', 'footer_template', 'publications_template', 'main_grid-of-sponsors',
+    'footer_template', 'publications_template', 'main_grid-of-sponsors',
     'publications_list_template', 'team_slider_template', 'main_grid_of_services'
 ];
 
