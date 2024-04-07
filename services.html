@@ -11,6 +11,92 @@
     <link rel="stylesheet" href="styles/css/style.css">
 </head>
 <body>
-
+    <div class="bg-black-pages">
+        <div class="bg-black-pages__gradient">
+            <header>
+                <div class="wrapper header">
+                    <input type="checkbox" id="mobile" class="header__checkbox">
+                    <label for="mobile" class="header__label b__color-header-label">
+                        <span class="header__label-burger b__color-burger"></span>
+                    </label>
+                    <a href="." class="header__logo">
+                        <svg class="header__logo-image">
+                            <use href="./assets/images/svgs/sprites/logo-sprites.svg#logo-w"></use>
+                        </svg>
+                        <span class="header__logo-text b__color-logo-text">services</span>
+                    </a>
+                    <nav class="header__navigation">
+                        <ul class="header__navigation-list">
+                            <li class="header__navigation-list-item">
+                                <a class="header__navigation-list-item-link b__color-bottom-link" href="#">
+                                    about us
+                                </a>
+                            </li>
+                            <li class="header__navigation-list-item">
+                                <a class="header__navigation-list-item-link b__color-bottom-link
+                                b__color-bottom-link--selected  header__navigation-list-item-link--selected"
+                                href="services.html">
+                                    services
+                                </a>
+                            </li>
+                            <li class="header__navigation-list-item">
+                                <a class="header__navigation-list-item-link b__color-bottom-link" href="#">
+                                    team
+                                </a>
+                            </li>
+                            <li class="header__navigation-list-item">
+                                <a class="header__navigation-list-item-link b__color-bottom-link" href="#">
+                                    publications
+                                </a>
+                            </li>
+                            <li class="header__navigation-list-item">
+                                <a class="header__navigation-list-item-link b__color-bottom-link" href="#">
+                                    contact
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__language-container b__color-top-header">
+                        <ul class="header__language-container-list">
+                            <li class="header__language-container-list-item">
+                                <a href="#"
+                                   class="header__language-container-list-item-link
+                                       b__color-top-link-color">Ру</a>
+                            </li>
+                            <li class="header__language-container-list-item">
+                                <a href="#"
+                                   class="header__language-container-list-item-link
+                                       b__color-top-link-color">Ук</a></li>
+                            <li class="header__language-container-list-item">
+                                <a href="#"
+                                   class="header__language-container-list-item-link
+                                       b__color-top-link-color header__language-container-list-item-link--selected">En
+                                </a>
+                            </li>
+                        </ul>
+                        <p class="header__language-container-adress b__color-top-adress">
+                            Kyiv, Mechnikova str, 14/1
+                        </p>
+                        <a href="tel:0800 211 927" class="header__language-container-tel b__color-top-tel-color">
+                            0800 211 927
+                        </a>
+                        <a href="#" class="header__language-container-facebook-link">
+                            <svg class="header__language-container-facebook-link-icon">
+                                <use href="./assets/images/svgs/sprites/facebook-sprites.svg#facebook-gray"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <section id="main_grid_of_services"></section>
+        </div>
+        <div class="bg-black-pages__decor-line-first"></div>
+        <div class="bg-black-pages__decor-line-second"></div>
+    </div>
+    <main>
+        <section id="main_grid-of-sponsors"></section>
+    </main>
+    <footer id="footer_template"></footer>
+    <script src="scripts/include_templates.js"></script>
 </body>
 </html>
