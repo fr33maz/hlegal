@@ -7,15 +7,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <title>hLegal</title>
+    <title>hLegal | services</title>
     <link rel="stylesheet" href="styles/css/style.css">
 </head>
-
 <body>
     <div class="bg-black-pages">
-        <img class="bg-black-pages__bg-symbol"
-             src="./assets/images/svgs/asset_hlegal_symbol.svg"
-             alt="illustration of symbol 'h'">
         <div class="bg-black-pages__gradient">
             <header>
                 <div class="wrapper header">
@@ -27,6 +23,7 @@
                         <svg class="header__logo-image">
                             <use href="./assets/images/svgs/sprites/logo-sprites.svg#logo-w"></use>
                         </svg>
+                        <span class="header__logo-text b__color-logo-text">services</span>
                     </a>
                     <nav class="header__navigation">
                         <ul class="header__navigation-list">
@@ -36,7 +33,9 @@
                                 </a>
                             </li>
                             <li class="header__navigation-list-item">
-                                <a class="header__navigation-list-item-link b__color-bottom-link" href="services.html">
+                                <a class="header__navigation-list-item-link b__color-bottom-link
+                                b__color-bottom-link--selected  header__navigation-list-item-link--selected"
+                                href="services.html">
                                     services
                                 </a>
                             </li>
@@ -62,16 +61,16 @@
                             <li class="header__language-container-list-item">
                                 <a href="#"
                                    class="header__language-container-list-item-link
-                                   b__color-top-link-color">Ру</a>
+                                       b__color-top-link-color">Ру</a>
                             </li>
                             <li class="header__language-container-list-item">
                                 <a href="#"
                                    class="header__language-container-list-item-link
-                                   b__color-top-link-color">Ук</a></li>
+                                       b__color-top-link-color">Ук</a></li>
                             <li class="header__language-container-list-item">
                                 <a href="#"
                                    class="header__language-container-list-item-link
-                                   b__color-top-link-color header__language-container-list-item-link--selected">En
+                                       b__color-top-link-color header__language-container-list-item-link--selected">En
                                 </a>
                             </li>
                         </ul>
@@ -89,54 +88,13 @@
                     </div>
                 </div>
             </header>
-            <section class="homepage-info">
-                <div class="homepage-info__wrapper">
-                    <h1 class="homepage-info__title">you legal solutions provider</h1>
-                    <a href="" class="homepage-info__link-down">
-                        <svg class="homepage-info__arrow-down">
-                            <use xlink:href="./assets/images/svgs/arrow-down.svg#arrow-down"></use>
-                        </svg>
-                    </a>
-                    <ul class="homepage-info__content">
-                        <li>
-                            <ul class="homepage-info__links-list">
-                                <li class="homepage-info__links-item">
-                                    <a href="#">Consistent</a>
-                                </li>
-                                <li class="homepage-info__links-item">
-                                    <a href="#">Customer oriented</a>
-                                </li>
-                                <li class="homepage-info__links-item">
-                                    <a href="#">Innovative</a>
-                                </li>
-                                <li class="homepage-info__links-item">
-                                    <a href="#">Business oriented</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><hr class="homepage-info__dividing-line"></li>
-                        <li>
-                            <h2 class="homepage-info__title-description">
-                                We turn the idea of legal services
-                            </h2>
-                            <span class="homepage-info__description">
-                                Consolidating many years of experience and practice, the company's lawyers accompany
-                                complex projects and achieve a number of important decisions for the industry.
-                                Many of them form the practice of applying the law of the sea in Ukraine.
-                            </span>
-                        </li>
-                    </ul>
-                </div>
-            </section>
             <section id="main_grid_of_services"></section>
         </div>
         <div class="bg-black-pages__decor-line-first"></div>
         <div class="bg-black-pages__decor-line-second"></div>
     </div>
     <main>
-        <section id="team_slider_template"></section>
         <section id="main_grid-of-sponsors"></section>
-        <section id="publications_list_template"></section>
     </main>
     <footer id="footer_template"></footer>
     <script src="scripts/include_templates.js"></script>
