@@ -111,3 +111,23 @@
     color: $color;
     @include font-fs-fw-lh-ls($fs, $fw, $lh, $ls);
 }
+
+@mixin button($mw, $mh) {
+    min-width: $mw;
+    min-height: $mh;
+    padding: 18px 30px;
+    border: none;
+    border-radius: 12px;
+    color: var(--text-light);
+    background-color: var(--active-regular_color);
+    box-shadow: 0 0 20px 0 rgba(36, 163, 255, 0.5);
+    @include font-fw-lh-ls(700, 20px, 0);
+    text-align: center;
+
+    &:hover {
+        background-color: var(--active-hover_color);
+    }
+    &:active {
+        background-color: var(--active_color);
+    }
+}
