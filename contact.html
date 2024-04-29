@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>hLegal</title>
+    <link rel="stylesheet" href="styles/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="wrapper header">
+            <input type="checkbox" id="mobile" class="header__checkbox">
+            <label for="mobile" class="header__label w__color-header-label">
+                <span class="header__label-burger w__color-burger"></span>
+            </label>
+            <a href="#" class="header__logo">
+                <svg class="header__logo-image">
+                    <use href="./assets/images/svgs/sprites/logo-sprites.svg#logo-b"></use>
+                </svg>
+                <span class="header__logo-text w__color-logo-text">contact</span>
+            </a>
+            <nav class="header__navigation">
+                <ul class="header__navigation-list">
+                    <li class="header__navigation-list-item"><a
+                            class="header__navigation-list-item-link"
+                            href="#">about
+                        us</a></li>
+                    <li class="header__navigation-list-item">
+                        <a class="header__navigation-list-item-link" href="services.html">
+                            services
+                        </a>
+                    </li>
+                    <li class="header__navigation-list-item">
+                        <a class="header__navigation-list-item-link" href="#">
+                            team
+                        </a>
+                    </li>
+                    <li class="header__navigation-list-item">
+                        <a class="header__navigation-list-item-link" href="#">
+                            publications
+                        </a>
+                    </li>
+                    <li class="header__navigation-list-item">
+                        <a class="header__navigation-list-item-link  header__navigation-list-item-link--selected"
+                           href="contact.html">
+                            contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__language-container w__color-top-header">
+                <ul class="header__language-container-list">
+                    <li class="header__language-container-list-item">
+                        <a href="#" class="header__language-container-list-item-link w__color-top-link-color">Ру</a>
+                    </li>
+                    <li class="header__language-container-list-item">
+                        <a href="#" class="header__language-container-list-item-link w__color-top-link-color">Ук</a>
+                    </li>
+                    <li class="header__language-container-list-item">
+                        <a href="#" class="header__language-container-list-item-link  w__color-top-link-color
+                        header__language-container-list-item-link--selected">En</a>
+                    </li>
+                </ul>
+                <p class="header__language-container-adress">Kyiv, Mechnikova str, 14/1</p>
+                <a href="tel:0800211927" class="header__language-container-tel w__color-top-tel-color">0800 211 927</a>
+                <a href="#" class="header__language-container-facebook-link">
+                    <svg class="header__language-container-facebook-link-icon">
+                        <use href="./assets/images/svgs/sprites/facebook-sprites.svg#facebook-gray"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="contact">
+            <ul>
+                <li>
+                    <ul>
+                        <li>
+
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <!--  method='post' not allowed in gitHub  -->
+                    <form action="." method="get" class="contact__menu">
+                        <ul class="contact__menu-content">
+                            <li class="contact__menu-content-header">
+                                <h2 class="contact__menu-title">We would like to help you</h2>
+                            </li>
+                            <li class="contact__menu-content-message">
+                                <input class="contact__menu-content-name" id="username" type="text"
+                                       placeholder="Name" autocomplete="off">
+                                <textarea class="contact__menu-content-text" id="userMessage"
+                                          cols="26" rows="6" placeholder="Message"></textarea>
+                            </li>
+                            <li class="contact__menu-content-contacts">
+                                <h3 class="contact__menu-content-contacts-subtitle">
+                                    How to answer you?
+                                </h3>
+                                <input class="contact__menu-content-contacts-phone" id="userPhoneNumber"
+                                       type="text" placeholder="Phone number">
+                                <input class="contact__menu-content-contacts-email" id="userEmail"
+                                       type="text" placeholder="Email">
+                            </li>
+                            <li>
+                                <input class="contact__menu-content-button"
+                                       type="submit" value="Send message">
+                            </li>
+                        </ul>
+                    </form>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer id="footer_template"></footer>
+    <script src="scripts/include_templates.js"></script>
+</body>
+</html>
