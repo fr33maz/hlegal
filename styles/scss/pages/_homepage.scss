@@ -62,7 +62,8 @@
   }
   &__dividing-line {
     margin: 0;
-    border: 4px solid var(--bg-light);
+    border: unset;
+    border-bottom: 4px solid var(--bg-light);
     opacity: 0.3;
   }
   &__links{
