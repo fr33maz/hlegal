@@ -1,0 +1,80 @@
+@use '../globals/mixins' as *;
+
+@media screen and (min-width: 768px) {
+  .contact {
+    &__wrapper {
+      max-width: 768px;
+      padding: 60px;
+    }
+    &__list {
+      gap: 60px;
+    }
+    &__menu {
+      &-title {
+        max-width: 588px;
+      }
+      &-content {
+        max-width: 765px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contact {
+    &__wrapper {
+      max-width: 1024px;
+    }
+    &__list {
+      flex-direction: row;
+    }
+    &__item {
+      min-width: 422px;
+    }
+    &__menu {
+      &-title {
+        max-width: 362px;
+      }
+      &-content {
+        max-width: 422px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1440px) {
+  .contact {
+    &__wrapper {
+      max-width: 1440px;
+      padding: 60px 180px;
+    }
+    &__item {
+      min-width: 510px;
+    }
+    &__menu {
+      &-title {
+        max-width: 450px;
+      }
+      &-content {
+        max-width: 510px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1920px) {
+  .contact {
+    &__wrapper {
+      max-width: 1920px;
+      padding: 60px 280px;
+    }
+    &__item {
+      min-width: 650px;
+    }
+    &__menu {
+      &-title {
+        max-width: 590px;
+      }
+      &-content {
+        max-width: 650px;
+      }
+    }
+  }
+}
