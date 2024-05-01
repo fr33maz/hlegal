@@ -1,0 +1,165 @@
+@use '../globals/mixins' as *;
+
+.contact {
+  &__wrapper {
+    max-width: 375px;
+    padding: 30px;
+    margin: 0 auto;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  &__requisites {
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      hr {
+        margin: 0;
+        border: unset;
+        border-bottom: 4px solid var(--grey-separator_color);
+      }
+      a {
+        &:hover, &:hover span{
+          border-bottom: none;
+          padding: 0;
+          color: var(--accent_color);
+          }
+        svg {
+          fill: #24A3FF;
+        }
+        &:hover svg {
+          fill: var(--accent_color);
+        }
+        &[href^='tel'] {
+          color: var(--main-alt_color);
+          &:hover {
+            color: var(--accent_color);
+          }
+        }
+      }
+    }
+    &-item {}
+    &-address, &-phone, &-email {
+      @include font-fs-fw-lh(21px, 400, 30px);
+    }
+    &-address {
+      font-style: normal;
+      color: var(--main_color);
+    }
+    &-phone {
+      color: var(--main-alt_color);
+    }
+    &-hot-line {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    &-social-network {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      @include font-fs-fw-lh(12px, 700, 16px);
+
+      span {
+        display: block;
+        text-transform: uppercase;
+      }
+    }
+  }
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &-title {
+      margin: 0;
+      max-width: 255px;
+      @include gradient-text_color();
+      @include font-fs-fw-lh-ls(30px, 700, 37px, 0);
+    }
+    &-content {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      background-color: var(--grey-bg_color);
+      max-width: 375px;
+      padding: 30px;
+      border-radius: 12px;
+
+      &-header {
+        display: flex;
+        justify-content: space-between;
+      }
+      &-message {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      &-name, &-text {
+        min-width: 100%;
+        padding: 15px;
+        border: none;
+        border-radius: 8px;
+
+        &::placeholder {
+          @include font-fs-fw-lh-ls(16px, 400, 26px, 0);
+          color: var(--grey-text_color);
+        }
+      }
+      &-name {
+        min-height: 56px;
+      }
+      &-text {
+        height: 130px;
+      }
+      &-contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        &-subtitle {
+          margin: 0;
+          @include fonts-h3-caps(var(--grey-text_color), 14px, 700, 17px, 1px);
+        }
+        &-phone, &-email {
+          min-width: 100%;
+          min-height: 56px;
+          padding: 15px;
+          border: none;
+          border-radius: 8px;
+
+          &::placeholder {
+            @include font-fs-fw-lh-ls(16px, 400, 26px, 0);
+            color: var(--grey-text_color);
+          }
+        }
+      }
+      &-button {
+        @include button(100%, 56px);
+      }
+    }
+    &__img {
+      border-radius: 20px;
+    }
+    &-close {
+      display: flex;
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      padding: 0;
+
+      &:hover,
+      &:focus {
+        background-color: var(--grey-separator_color);
+        cursor: pointer;
+      }
+      img {
+        margin: auto;
+      }
+    }
+  }
+}
