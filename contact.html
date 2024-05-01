@@ -17,7 +17,7 @@
             <label for="mobile" class="header__label w__color-header-label">
                 <span class="header__label-burger w__color-burger"></span>
             </label>
-            <a href="#" class="header__logo">
+            <a href="." class="header__logo">
                 <svg class="header__logo-image">
                     <use href="./assets/images/svgs/sprites/logo-sprites.svg#logo-b"></use>
                 </svg>
@@ -77,44 +77,64 @@
     </header>
     <main>
         <section class="contact">
-            <ul>
-                <li>
-                    <ul>
-                        <li>
-
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <!--  method='post' not allowed in gitHub  -->
-                    <form action="." method="get" class="contact__menu">
-                        <ul class="contact__menu-content">
-                            <li class="contact__menu-content-header">
-                                <h2 class="contact__menu-title">We would like to help you</h2>
-                            </li>
-                            <li class="contact__menu-content-message">
-                                <input class="contact__menu-content-name" id="username" type="text"
-                                       placeholder="Name" autocomplete="off">
-                                <textarea class="contact__menu-content-text" id="userMessage"
-                                          cols="26" rows="6" placeholder="Message"></textarea>
-                            </li>
-                            <li class="contact__menu-content-contacts">
-                                <h3 class="contact__menu-content-contacts-subtitle">
-                                    How to answer you?
-                                </h3>
-                                <input class="contact__menu-content-contacts-phone" id="userPhoneNumber"
-                                       type="text" placeholder="Phone number">
-                                <input class="contact__menu-content-contacts-email" id="userEmail"
-                                       type="text" placeholder="Email">
-                            </li>
+            <div class="contact__wrapper">
+                <ul class="contact__list">
+                    <li class="contact__item">
+                        <ul class="contact__requisites-list">
                             <li>
-                                <input class="contact__menu-content-button"
-                                       type="submit" value="Send message">
+                                <address class="contact__requisites-address">Kyiv,<br> Mechnikova str., 14/1</address>
+                            </li>
+                            <li><hr></li>
+                            <li class="contact__requisites-hot-line">
+                                <a class="contact__requisites-phone" href="tel:+30800211927">
+                                    0800 211 927
+                                </a>
+                                <a class="contact__requisites-email" href="mailto:contact@forstudy.space">
+                                    contact@forstudy.space
+                                </a>
+                            </li>
+                            <li><hr></li>
+                            <li>
+                                <a class="contact__requisites-social-network" href="#">
+                                    <svg class="icon-38px social-network_facebook">
+                                        <use xlink:href="./assets/images/svgs/sn-facebook_38x38.svg#sn-facebook_38x38"></use>
+                                    </svg>
+                                    <span>Our page <br> on facebook</span>
+                                </a>
                             </li>
                         </ul>
-                    </form>
-                </li>
-            </ul>
+                    </li>
+                    <li class="contact__item">
+                        <!--  method='post' not allowed in gitHub  -->
+                        <form action="." method="get" class="contact__menu">
+                            <ul class="contact__menu-content">
+                                <li class="contact__menu-content-header">
+                                    <h2 class="contact__menu-title">We would like to help you</h2>
+                                </li>
+                                <li class="contact__menu-content-message">
+                                    <input class="contact__menu-content-name" id="username" type="text"
+                                           placeholder="Name" autocomplete="off">
+                                    <textarea class="contact__menu-content-text" id="userMessage"
+                                              cols="26" rows="6" placeholder="Message"></textarea>
+                                </li>
+                                <li class="contact__menu-content-contacts">
+                                    <h3 class="contact__menu-content-contacts-subtitle">
+                                        How to answer you?
+                                    </h3>
+                                    <input class="contact__menu-content-contacts-phone" id="userPhoneNumber"
+                                           type="text" placeholder="Phone number">
+                                    <input class="contact__menu-content-contacts-email" id="userEmail"
+                                           type="text" placeholder="Email">
+                                </li>
+                                <li>
+                                    <input class="contact__menu-content-button"
+                                           type="submit" value="Send message">
+                                </li>
+                            </ul>
+                        </form>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
     <footer id="footer_template"></footer>
