@@ -1,0 +1,122 @@
+@use '../globals/mixins' as *;
+
+.about-us {
+  &__wrapper {
+    max-width: 375px;
+    padding: 30px;
+    margin: 0 auto;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  &__part {
+    &-first {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+  }
+  &__title {
+    max-width: 315px;
+    padding: 0;
+    margin: 0;
+    @include fonts-hero(30px, 700, 37px, 0);
+  }
+  &__description {
+    display: block;
+    @include font-fs-fw-lh(19px, 400, 30px);
+  }
+  &__divide-border {
+    border: unset;
+    border-left: 4px solid var(--grey-separator_color);
+    padding: 0 0 0 30px;
+  }
+  &__content {
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 41px;
+    }
+    &-item {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    &-title {
+      display: block;
+      @include fonts-hero(36px, 700, 44px, 0);
+    }
+    &-achieve {
+      &-header {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      &-description {
+        display: block;
+        @include font-fw-lh-ls(400, 20px, 0);
+        color: var(--main_color);
+      }
+    }
+  }
+  &__team-photo {
+    text-align: center;
+  }
+}
+.achievements {
+  background-color: var(--grey-bg_color);
+  &__wrapper {
+    max-width: 375px;
+    padding: 30px 60px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  &__title {
+    margin: 0;
+    @include fonts-h3-caps(var(--main_color), 14px, 700, 17px, 1px);
+  }
+  &__image {
+    &-list {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+    &-item {
+      display: flex;
+      width: 255px;
+      height: 90px;
+      border-radius: 12px;
+      background-color: var(--bg-light);
+
+      img {
+        margin: auto;
+        max-height: 40px;
+      }
+      &:nth-child(n + 2) {
+        display: none;
+      }
+    }
+  }
+  &__ellipses-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  &__ellips {
+    display: block;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    background-color: var(--active-regular_color);
+    opacity: 0.2;
+
+    &-active {
+      opacity: 1;
+    }
+  }
+}
