@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>hLegal</title>
+    <link rel="stylesheet" href="styles/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="wrapper header">
+            <input type="checkbox" id="mobile" class="header__checkbox">
+            <label for="mobile" class="header__label w__color-header-label">
+                <span class="header__label-burger w__color-burger"></span>
+            </label>
+            <a href="." class="header__logo">
+                <svg class="header__logo-image">
+                    <use href="./assets/images/svgs/sprites/logo-sprites.svg#logo-b"></use>
+                </svg>
+                <span class="header__logo-text w__color-logo-text">about us</span>
+            </a>
+            <nav class="header__navigation">
+                <ul class="header__navigation-list">
+                    <li class="header__navigation-list-item">
+                        <a class="header__navigation-list-item-link header__navigation-list-item-link--selected"
+                            href="about-us.html">
+                            about us
+                        </a>
+                    </li>
+                    <li class="header__navigation-list-item">
+                        <a class="header__navigation-list-item-link" href="services.html">
+                            services
+                        </a>
+                    </li>
+                    <li class="header__navigation-list-item">
+                        <a class="header__navigation-list-item-link" href="#">
+                            team
+                        </a>
+                    </li>
+                    <li class="header__navigation-list-item">
+                        <a class="header__navigation-list-item-link" href="#">
+                            publications
+                        </a>
+                    </li>
+                    <li class="header__navigation-list-item">
+                        <a class="header__navigation-list-item-link"
+                           href="contact.html">
+                            contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__language-container w__color-top-header">
+                <ul class="header__language-container-list">
+                    <li class="header__language-container-list-item">
+                        <a href="#" class="header__language-container-list-item-link w__color-top-link-color">Ру</a>
+                    </li>
+                    <li class="header__language-container-list-item">
+                        <a href="#" class="header__language-container-list-item-link w__color-top-link-color">Ук</a>
+                    </li>
+                    <li class="header__language-container-list-item">
+                        <a href="#" class="header__language-container-list-item-link  w__color-top-link-color
+                            header__language-container-list-item-link--selected">En</a>
+                    </li>
+                </ul>
+                <p class="header__language-container-adress">Kyiv, Mechnikova str, 14/1</p>
+                <a href="tel:0800211927" class="header__language-container-tel w__color-top-tel-color">0800 211 927</a>
+                <a href="#" class="header__language-container-facebook-link">
+                    <svg class="header__language-container-facebook-link-icon">
+                        <use href="./assets/images/svgs/sprites/facebook-sprites.svg#facebook-gray"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="about-us">
+            <div class="about-us__wrapper">
+                <ul class="about-us__list">
+                    <li class="about-us__part-first">
+                        <h2 class="about-us__title">
+                            We turn over the idea of legal services
+                        </h2>
+                        <span class="about-us__description">
+                            Consolidating many years of experience and practice, the company's lawyers accompany
+                            complex projects and achieve the adoption of a number of decisions that are important for
+                            the industry. Many people form the practice of applying the law of the sea in Ukraine.<br>
+                            <br>HLEGAL is a reliable business partner, confirmed by stable cooperation with
+                            international law firms, the trust of large Ukrainian and international companies, and
+                            the recognition of professional ratings.
+                        </span>
+                    </li>
+                    <li class="about-us__part-second">
+                        <ul class="about-us__content-list  about-us__divide-border">
+                            <li class="about-us__content-item">
+                                <div class="about-us__content-achieve-header">
+                                    <svg class="icon-32px achievements_experience">
+                                        <use xlink:href="./assets/images/svgs/sprites/achievements-icon_sprite.svg#achievements_experience"></use>
+                                    </svg>
+                                    <span class="about-us__content-title">10+</span>
+                                </div>
+                                <span class="about-us__content-achieve-description">
+                                    years of relevant experience
+                                </span>
+                            </li>
+                            <li class="about-us__content-item">
+                                <div class="about-us__content-achieve-header">
+                                    <svg class="icon-32px achievements_clients">
+                                        <use xlink:href="./assets/images/svgs/sprites/achievements-icon_sprite.svg#achievements_clients"></use>
+                                    </svg>
+                                    <span class="about-us__title">30+</span>
+                                </div>
+                                <span class="about-us__content-achieve-description">
+                                    active clients who entrust us with their orders on a monthly basis
+                                </span>
+                            </li>
+                            <li class="about-us__content-item">
+                                <div class="about-us__content-achieve-header">
+                                    <svg class="icon-32px achievements_probono">
+                                        <use xlink:href="./assets/images/svgs/sprites/achievements-icon_sprite.svg#achievements_probono"></use>
+                                    </svg>
+                                    <span class="about-us__title">500+</span>
+                                </div>
+                                <span class="about-us__content-achieve-description">
+                                    hours of pro bono work annually
+                                </span>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <picture class="about-us__team-photo">
+                <source srcset="./assets/images/png/about-us/team-photo_1920px.png"
+                        media="(min-width: 1920px)" />
+                <source srcset="./assets/images/png/about-us/team-photo_1440px.png"
+                        media="(min-width: 1440px)" />
+                <source srcset="./assets/images/png/about-us/team-photo_1024px.png"
+                        media="(min-width: 1024px)" />
+                <source srcset="./assets/images/png/about-us/team-photo_768px.png"
+                        media="(min-width: 768px)" />
+                <img src="./assets/images/png/about-us/team-photo_375px.png" alt="team photo">
+            </picture>
+            <div class="about-us__wrapper">
+                <ul class="about-us__list">
+                    <li class="about-us__part-first">
+                        <span class="about-us__description">
+                            The historically unchanged legal profession has begun to reformat in recent years. Clients
+                            are feeling this, but law firms are still resisting evolution. Clients need convenience,
+                            simplicity, transparent payment. Google, IBM WatsOn, Symantec Clearwell prove that the
+                            technological revolution in legal services has begun and is imminent. <br><br>
+                            Quality is what we care about the most. <br><br>
+                            It's simple. If you are unhappy with our work, we will refund your money. We trust our
+                            clients. And we want our clients to trust us too.
+                        </span>
+                    </li>
+                    <li class="about-us__part-second">
+                        <h2 class="about-us__title">
+                            Quality is what we care about the most.
+                        </h2>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="achievements">
+            <div class="achievements__wrapper">
+                <h2 class="achievements__title">achievements</h2>
+                <ul class="achievements__image-list">
+                    <li class="achievements__image-item">
+                        <img src="./assets/images/png/about-us/achieve-img-1.png" alt="illustration of achieve">
+                    </li>
+                    <li class="achievements__image-item">
+                        <img src="./assets/images/png/about-us/achieve-img-2.png" alt="illustration of achieve">
+                    </li>
+                    <li class="achievements__image-item">
+                        <img src="./assets/images/png/about-us/achieve-img-3.png" alt="illustration of achieve">
+                    </li>
+                    <li class="achievements__image-item">
+                        <img src="./assets/images/png/about-us/achieve-img-4.png" alt="illustration of achieve">
+                    </li>
+                </ul>
+                <div class="achievements__ellipses-row">
+                    <span class="achievements__ellips achievements__ellips-active"></span>
+                    <span class="achievements__ellips"></span>
+                    <span class="achievements__ellips"></span>
+                    <span class="achievements__ellips"></span>
+                    <span class="achievements__ellips"></span>
+                    <span class="achievements__ellips"></span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer_template"></footer>
+    <script src="scripts/include_templates.js"></script>
+</body>
+</html>
