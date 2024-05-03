@@ -1,0 +1,125 @@
+@use '../globals/mixins' as *;
+
+@media screen and (min-width: 768px) {
+  .about-us {
+    &__wrapper {
+      max-width: 768px;
+      padding: 60px;
+    }
+    &__title {
+      max-width: 648px;
+      @include fonts-hero(38px, 700, 46px, 0);
+    }
+  }
+  .achievements {
+    &__wrapper {
+      max-width: 768px;
+    }
+    &__image {
+      &-item {
+        display: flex;
+        width: 132px;
+        height: 90px;
+        border-radius: 12px;
+        background-color: var(--bg-light);
+
+        &:nth-child(n + 2) {
+          display: flex;
+        }
+      }
+    }
+    &__ellips:nth-child(n + 4) {
+      display: none;
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about-us {
+    &__wrapper {
+      max-width: 1024px;
+    }
+    &__list {
+      flex-direction: row;
+    }
+    &__title {
+      max-width: 486px;
+    }
+    &__part {
+      &-first {
+        max-width: 486px;
+      }
+      &-second {
+        max-width: 388px;
+      }
+    }
+  }
+  .achievements {
+    &__wrapper {
+      max-width: 1024px;
+    }
+    &__image {
+      &-item {
+        width: 196px;
+        height: 110px;
+
+        img {
+          max-height: 60px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1440px) {
+  .about-us {
+    &__wrapper {
+      max-width: 1440px;
+      padding: 60px 180px;
+    }
+    &__title {
+      max-width: 662px;
+    }
+    &__part {
+      &-first {
+        max-width: 662px;
+      }
+    }
+  }
+  .achievements {
+    &__wrapper {
+      max-width: 1440px;
+      padding: 30px 60px;
+    }
+    &__image {
+      &-item {
+        width: 300px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1920px) {
+  .about-us {
+    &__wrapper {
+      max-width: 1920px;
+      padding: 60px 280px;
+    }
+    &__title {
+      max-width: 942px;
+    }
+    &__part {
+      &-first {
+        max-width: 942px;
+      }
+    }
+  }
+  .achievements {
+    &__wrapper {
+      max-width: 1920px;
+      padding: 30px 160px;
+    }
+    &__image {
+      &-item {
+        width: 370px;
+      }
+    }
+  }
+}
