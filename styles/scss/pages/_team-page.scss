@@ -1,0 +1,95 @@
+@use '../globals/mixins' as *;
+
+.team {
+  &__wrapper {
+    max-width: 375px;
+    padding: 30px 30px 60px;
+    margin: 0 auto;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  &__title {
+    margin: 0;
+    @include fonts-hero(30px, 700, 37px, 0);
+  }
+  &__grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &-cell {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    &-image {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 300px;
+      min-width: 100%;
+      min-height: 100%;
+
+      &-container {
+        max-width: 315px;
+        min-height: 300px;
+        border-radius: 12px;
+        width: 315px;
+        overflow: hidden;
+        position: relative;
+      }
+    }
+    &-link {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &-arrow {
+        display: flex;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background-color: var(--grey-bg_color);
+
+        &-normal {
+          max-width: 7px;
+          max-height: 14px;
+          margin: auto;
+        }
+        &-accent {
+          display: none;
+          max-width: 7px;
+          max-height: 14px;
+          margin: auto;
+        }
+      }
+      span {
+        display: block;
+        margin: 0 0 6px;
+        @include font-fs-fw-lh(16px, 700, 20px);
+        color: var(--main_color);
+      }
+      &:hover span {
+        color: var(--accent_color);
+      }
+      &:hover &-arrow {
+        &-normal {
+          display: none;
+        }
+        &-accent {
+          display: block;
+        }
+      }
+    }
+    &-work-position {
+      display: block;
+      @include font-fs-fw-lh(14px, 400, 22px);
+      color: var(--grey-text_color);
+    }
+  }
+}
