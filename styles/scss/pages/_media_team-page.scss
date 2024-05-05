@@ -1,0 +1,88 @@
+@use '../globals/mixins' as *;
+
+@media screen and (min-width: 768px) {
+  .team {
+    &__wrapper {
+      max-width: 768px;
+      padding: 60px;
+    }
+    &__list {
+      gap: 60px;
+    }
+    &__title {
+      @include fonts-hero();
+    }
+    &__grid {
+      display: grid;
+      flex-direction: unset;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 60px;
+
+      &-image {
+        height: 400px;
+
+        &-container {
+          max-width: 294px;
+          min-height: 400px;
+          width: 294px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .team {
+    &__wrapper {
+      max-width: 1024px;
+    }
+    &__title {
+      padding: 0 120px;
+    }
+    &__grid {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+
+      &-image {
+        &-container {
+          max-width: 261px;
+          width: 261px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1440px) {
+  .team {
+    &__wrapper {
+      max-width: 1440px;
+    }
+    &__grid {
+      &-image {
+        &-container {
+          max-width: 400px;
+          width: 400px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1920px) {
+  .team {
+    &__wrapper {
+      max-width: 1920px;
+    }
+    &__title {
+      padding: 0 220px;
+    }
+    &__grid {
+      &-image {
+        height: unset;
+        &-container {
+          max-width: 493px;
+          width: 493px;
+        }
+      }
+    }
+  }
+}
