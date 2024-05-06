@@ -1,0 +1,97 @@
+@use '../globals/mixins' as *;
+
+@media screen and (min-width: 768px) {
+  .team-entry {
+    &__wrapper {
+      max-width: 768px;
+      padding: 60px;
+    }
+    &__grid {
+      display: grid;
+      flex-direction: unset;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      grid-template-areas:
+        "profile-photo profile-requisites"
+        "dividing-line dividing-line"
+        "profile-details profile-details";
+
+      &-image {
+        height: 375px;
+
+        &-container {
+          max-width: 300px;
+          min-height: 375px;
+          width: 300px;
+        }
+      }
+    }
+    &__cell {
+      &:first-child {
+        grid-area: profile-photo;
+      }
+      &:nth-child(2) {
+        grid-area: profile-requisites;
+        justify-content: center;
+      }
+      &:nth-child(3) {
+        grid-area: dividing-line;
+      }
+      &:last-child {
+        grid-area: profile-details;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .team-entry {
+    &__wrapper {
+      max-width: 1024px;
+    }
+    &__grid {
+      grid-template-columns: 300px 1fr;
+      grid-template-areas:
+        "profile-photo profile-requisites"
+        "profile-photo dividing-line"
+        "profile-photo profile-details";
+      column-gap: 60px;
+    }
+    &__cell {
+      &:nth-child(2) {
+        justify-content: unset;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1440px) {
+  .team-entry {
+    &__wrapper {
+      max-width: 1440px;
+      padding: 60px 180px;
+    }
+    &__grid {
+      grid-template-columns: 400px 1fr;
+
+      &-image {
+        height: 500px;
+
+        &-container {
+          max-width: 400px;
+          min-height: 500px;
+          width: 400px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1920px) {
+  .team-entry {
+    &__wrapper {
+      max-width: 1920px;
+      padding: 60px 280px;
+    }
+    &__grid {
+      grid-template-columns: 400px 1fr;
+    }
+  }
+}
