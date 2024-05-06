@@ -1,0 +1,105 @@
+@use '../globals/mixins' as *;
+
+.publication-entry {
+  &__wrapper {
+    max-width: 375px;
+    padding: 30px 30px 60px;
+    margin: 0 auto;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  &__image, &__google-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 300px;
+    min-width: 100%;
+    min-height: 100%;
+
+    &-container {
+      max-width: 315px;
+      min-height: 300px;
+      border-radius: 12px;
+      width: 315px;
+      overflow: hidden;
+      position: relative;
+    }
+  }
+  &__google {
+    &-image {
+      height: 195px;
+
+      &-container {
+        min-height: 195px;
+      }
+    }
+    &-description {
+      display: block;
+      @include font-fs-fw-lh(14px, 400, 22px);
+      text-align: center;
+      color: var(--grey-text_color);
+    }
+  }
+  &__nested {
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    &-title {
+      margin: 0;
+      @include fonts-h2($fs: 20px, $lh: 24px);
+    }
+    &-public-date {
+      display: block;
+      @include font-fs-fw-lh-ls(12px, 700, 15px, 1px);
+      color: var(--grey-text_color);
+    }
+    &-subtitle {
+      margin: 0;
+      @include fonts-h4(var(--main-alt_color));
+    }
+    &-sublist {
+      display: flex;
+      gap: 10px;
+    }
+    &-subitem {
+      &:first-child, &:last-child {
+        display: block;
+      }
+      &:first-child {
+        min-width: 30px;
+        text-align: end;
+        @include font-fs-fw-lh(18px, 700, 26px);
+        color: var(--accent_color);
+      }
+      &:last-child {
+        @include font-fs-fw-lh(18px, 400, 26px);
+      }
+    }
+  }
+  &__items-center {
+    align-items: center;
+  }
+  &__dividing-line {
+    margin: 0;
+    border: unset;
+    border-bottom: 4px solid var(--grey-separator_color);
+  }
+  &__paragraph {
+    margin: 0;
+    @include font-fs-fw-lh(16px, 400, 26px);
+  }
+  &__title {
+    margin: 0;
+    @include fonts-hero($fs: 30px, $lh: 37px);
+  }
+  &__social-network-list {
+    display: flex;
+    gap: 10px;
+  }
+}
