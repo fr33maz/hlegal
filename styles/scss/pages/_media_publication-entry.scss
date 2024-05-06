@@ -1,0 +1,84 @@
+@use '../globals/mixins' as *;
+
+@media screen and (min-width: 768px) {
+  .publication-entry {
+    &__wrapper {
+      max-width: 768px;
+      padding: 60px;
+    }
+    &__image {
+      height: 500px;
+
+      &-container {
+        max-width: 648px;
+        min-height: 500px;
+        width: 648px;
+      }
+    }
+    &__google {
+      &-image {
+        height: 398px;
+
+        &-container {
+          max-width: 640px;
+          min-height: 398px;
+          width: 640px;
+        }
+      }
+    }
+    &__nested {
+      &-title {
+        @include fonts-h2($fs: 30px, $lh: 37px);
+      }
+      &-subtitle {
+        @include font-fs-lh(22px, 27px);
+      }
+    }
+    &__title {
+      @include fonts-hero($fs: 38px, $lh: 46px);
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .publication-entry {
+    &__wrapper {
+      max-width: 1024px;
+    }
+    &__image {
+      &-container {
+        max-width: 904px;
+        width: 904px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1440px) {
+  .publication-entry {
+    &__wrapper {
+      max-width: 1440px;
+      padding: 60px 180px;
+    }
+    &__image {
+      height: unset;
+
+      &-container {
+        max-width: 1080px;
+        width: 1080px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1920px) {
+  .publication-entry {
+    &__wrapper {
+      max-width: 1920px;
+      padding: 60px 280px;
+    }
+    &__image {
+      &-container {
+        max-width: 1360px;
+        width: 1360px;
+      }
+    }
+  }
+}
