@@ -190,9 +190,18 @@
         &-tel {
             font-size: 16px;
             line-height: 20px;
+
+            &:hover {
+                color: var(--accent_color);
+            }
         }
         &-facebook-link {
             display: none;
+            fill: var(--grey-text_color);
+
+            &:hover {
+                fill: var(--accent_color);
+            }
         }
     }
 }

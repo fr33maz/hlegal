@@ -2154,8 +2154,15 @@ a {
   font-size: 16px;
   line-height: 20px;
 }
+.header__language-container-tel:hover {
+  color: var(--accent_color);
+}
 .header__language-container-facebook-link {
   display: none;
+  fill: var(--grey-text_color);
+}
+.header__language-container-facebook-link:hover {
+  fill: var(--accent_color);
 }
 
 .b__color-burger {
