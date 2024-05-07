@@ -1550,6 +1550,192 @@ a {
     grid-template-columns: 400px 1fr;
   }
 }
+.publications {
+  background-color: var(--grey-bg_color);
+}
+.publications__wrapper {
+  max-width: 375px;
+  padding: 30px;
+  margin: 30px auto 0;
+}
+.publications__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.publications__button {
+  display: block;
+  min-width: 211px;
+  min-height: 56px;
+  padding: 18px 30px;
+  border: none;
+  border-radius: 12px;
+  color: var(--text-light);
+  background-color: var(--active-regular_color);
+  box-shadow: 0 0 20px 0 rgba(36, 163, 255, 0.5);
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0;
+  text-align: center;
+  font-size: 16px;
+}
+.publications__button:hover {
+  background-color: var(--active-hover_color);
+}
+.publications__button:active {
+  background-color: var(--active_color);
+}
+.publications__button-slide {
+  display: block;
+  min-width: 105px;
+  min-height: 38px;
+  padding: 8px 20px;
+  text-align: center;
+  border-radius: 10px;
+  color: var(--main_color);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0;
+}
+.publications__button-slide-container {
+  display: flex;
+  padding: 2px;
+  justify-content: space-between;
+  align-items: center;
+  width: 233px;
+  height: 41px;
+  background-color: var(--grey-separator_color);
+  border-radius: 12px;
+}
+.publications__button-slide:hover {
+  background-color: var(--grey-bg_color);
+}
+.publications__button-slide-active, .publications__button-slide-active:hover {
+  background-color: var(--bg-light);
+}
+.publications__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.publications__grid-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.publications__grid-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 200px;
+  min-width: 100%;
+  min-height: 100%;
+}
+.publications__grid-image-container {
+  max-width: 315px;
+  min-height: 200px;
+  border-radius: 12px 12px 0 0;
+  width: 315px;
+  overflow: hidden;
+  position: relative;
+}
+.publications__grid-content-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px;
+  background-color: var(--bg-light);
+  border-radius: 0 0 12px 12px;
+}
+.publications__grid-content-link {
+  display: block;
+}
+.publications__grid-content-link:hover {
+  color: var(--accent_color);
+}
+.publications__grid-content-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+.publications__grid-content-public-date {
+  display: block;
+  color: var(--grey-text_color);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.publications__grid-content-dividing-line {
+  margin: 0;
+  border: unset;
+  border-bottom: 4px solid var(--grey-separator_color);
+}
+.publications__grid-content-short-description {
+  display: block;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+@media screen and (min-width: 768px) {
+  .publications__wrapper {
+    max-width: 768px;
+    padding: 30px 60px 60px;
+    margin: 60px auto 0;
+  }
+  .publications__grid {
+    display: grid;
+    flex-direction: unset;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .publications__grid-content-list {
+    height: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .publications__wrapper {
+    max-width: 1024px;
+  }
+  .publications__grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .publications__grid-image-container {
+    max-width: 282px;
+    width: 281px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .publications__wrapper {
+    max-width: 1440px;
+  }
+  .publications__grid-image {
+    width: 420px;
+    height: unset;
+  }
+  .publications__grid-image-container {
+    max-width: 420px;
+    width: 420px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .publications__wrapper {
+    max-width: 1920px;
+    padding: 30px 160px 60px;
+  }
+  .publications__grid-image-container {
+    max-width: 514px;
+    width: 513px;
+  }
+}
 .publication-entry__wrapper {
   max-width: 375px;
   padding: 30px 30px 60px;
@@ -2583,7 +2769,8 @@ a {
 }
 .publication-list hr {
   margin: 0 0 15px;
-  border: 4px solid var(--grey-separator_color);
+  border: unset;
+  border-bottom: 4px solid var(--grey-separator_color);
 }
 .publication-list__description {
   display: block;
