@@ -67,7 +67,8 @@
   }
   hr {
     margin: 0 0 15px;
-    border: 4px solid var(--grey-separator_color);
+    border: unset;
+    border-bottom: 4px solid var(--grey-separator_color);
   }
   &__description {
     display: block;
