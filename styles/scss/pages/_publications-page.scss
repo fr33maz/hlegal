@@ -1,0 +1,114 @@
+@use '../globals/mixins' as *;
+
+.publications {
+  background-color: var(--grey-bg_color);
+  &__wrapper {
+    max-width: 375px;
+    padding: 30px;
+    margin: 30px auto 0;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  &__button {
+    display: block;
+    @include button(211px, 56px);
+    font-size: 16px;
+
+    &-slide {
+      display: block;
+      min-width: 105px;
+      min-height: 38px;
+      padding: 8px 20px;
+      text-align: center;
+      border-radius: 10px;
+      @include fonts-h4();
+
+      &-container {
+        display: flex;
+        padding: 2px;
+        justify-content: space-between;
+        align-items: center;
+        width: 233px;
+        height: 41px;
+        background-color: var(--grey-separator_color);
+        border-radius: 12px;
+      }
+
+      &:hover {
+        background-color: var(--grey-bg_color);
+      }
+
+      &-active, &-active:hover {
+        background-color: var(--bg-light);
+      }
+    }
+  }
+  &__grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &-cell {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &-image {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 200px;
+      min-width: 100%;
+      min-height: 100%;
+
+      &-container {
+        max-width: 315px;
+        min-height: 200px;
+        border-radius: 12px 12px 0 0;
+        width: 315px;
+        overflow: hidden;
+        position: relative;
+      }
+    }
+    &-content {
+      &-list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 30px;
+        background-color: var(--bg-light);
+        border-radius: 0 0 12px 12px;
+      }
+      &-link {
+        display: block;
+
+        &:hover {
+          color: var(--accent_color);
+        }
+      }
+      &-title {
+        margin: 0;
+        @include font-fs-fw-lh(16px, 700, 20px);
+      }
+      &-public-date {
+        display: block;
+        @include fonts-h3-caps($color: var(--grey-text_color), $fs: 12px, $lh: 15px)
+      }
+      &-dividing-line {
+        margin: 0;
+        border: unset;
+        border-bottom: 4px solid var(--grey-separator_color);
+      }
+      &-short-description {
+        display: block;
+        margin: 0;
+        @include font-fs-fw-lh(14px, 400, 22px);
+      }
+    }
+  }
+}
