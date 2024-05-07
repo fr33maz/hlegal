@@ -30,9 +30,7 @@
   &__title {
     margin: 0 0 30px;
     @include font-fs-fw-lh(30px, 700, 37px);
-    background: var(--heading);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @include gradient-text_color();
   }
   &__subtitle {
     @include font-fs-fw-lh(16px, 700, 20px);
