@@ -1,10 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <title>hLegal</title>
+  <link rel="stylesheet" href="styles/css/style.css">
 </head>
 <body>
-
+  <header>
+    <div class="wrapper header">
+      <input type="checkbox" id="mobile" class="header__checkbox">
+      <label for="mobile" class="header__label w__color-header-label">
+        <span class="header__label-burger w__color-burger"></span>
+      </label>
+      <a href="." class="header__logo">
+        <svg class="header__logo-image">
+          <use href="./assets/images/svgs/sprites/logo-sprites.svg#logo-b"></use>
+        </svg>
+        <span class="header__logo-text w__color-logo-text">publications</span>
+      </a>
+      <nav class="header__navigation">
+        <ul class="header__navigation-list">
+          <li class="header__navigation-list-item"><a
+                  class="header__navigation-list-item-link"
+                  href="about-us.html">about us</a>
+          </li>
+          <li class="header__navigation-list-item">
+            <a class="header__navigation-list-item-link" href="services.html">
+              services
+            </a>
+          </li>
+          <li class="header__navigation-list-item">
+            <a class="header__navigation-list-item-link"
+               href="team.html">
+              team
+            </a>
+          </li>
+          <li class="header__navigation-list-item">
+            <a class="header__navigation-list-item-link header__navigation-list-item-link--selected"
+               href="publications.html">
+              publications
+            </a>
+          </li>
+          <li class="header__navigation-list-item">
+            <a class="header__navigation-list-item-link"
+               href="contact.html">
+              contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__language-container w__color-top-header">
+        <ul class="header__language-container-list">
+          <li class="header__language-container-list-item">
+            <a href="#" class="header__language-container-list-item-link w__color-top-link-color">Ру</a>
+          </li>
+          <li class="header__language-container-list-item">
+            <a href="#" class="header__language-container-list-item-link w__color-top-link-color">Ук</a>
+          </li>
+          <li class="header__language-container-list-item">
+            <a href="#" class="header__language-container-list-item-link  w__color-top-link-color
+                              header__language-container-list-item-link--selected">En</a>
+          </li>
+        </ul>
+        <p class="header__language-container-adress">Kyiv, Mechnikova str, 14/1</p>
+        <a href="tel:0800211927" class="header__language-container-tel w__color-top-tel-color">0800 211 927</a>
+        <a href="#" class="header__language-container-facebook-link">
+          <svg class="header__language-container-facebook-link-icon">
+            <use href="./assets/images/svgs/sprites/facebook-sprites.svg#facebook-gray"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="publications">
+      <div class="publications__wrapper">
+        <ul class="publications__list">
+          <li class="publications__item">
+            <div class="publications__button-slide-container">
+              <span id="button-slide-news" class="publications__button-slide publications__button-slide-active">
+                news
+              </span>
+              <span id="button-slide-articles" class="publications__button-slide">
+                articles
+              </span>
+            </div>
+          </li>
+          <li class="publications__item">
+            <ul class="publications__grid">
+              <li class="publications__grid-cell">
+                <div class="publications__grid-image-container">
+                  <img class="publications__grid-image" src="./assets/images/png/publications/publication-1.png"
+                       alt="illustration of cover">
+                </div>
+                <ul class="publications__grid-content-list">
+                  <li>
+                    <a class="publications__grid-content-link" href="publication.html">
+                      <h2 class="publications__grid-content-title">
+                        Equity associate
+                      </h2>
+                    </a>
+                  </li>
+                  <li>
+                    <span class="publications__grid-content-public-date">
+                      April 22
+                    </span>
+                  </li>
+                  <li>
+                    <hr class="publications__grid-content-dividing-line">
+                  </li>
+                  <li>
+                    <p class="publications__grid-content-short-description">
+                      I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my
+                      parents told me that if I…
+                    </p>
+                  </li>
+                </ul>
+              </li>
+              <li class="publications__grid-cell">
+                <div class="publications__grid-image-container">
+                  <img class="publications__grid-image" src="./assets/images/png/publications/publication-2.png"
+                       alt="illustration of cover">
+                </div>
+                <ul class="publications__grid-content-list">
+                  <li>
+                    <a class="publications__grid-content-link" href="publication.html">
+                      <h2 class="publications__grid-content-title">
+                        Penalty for the Good Corporation: what will happen to Google and others
+                        for violating the GDPR
+                      </h2>
+                    </a>
+                  </li>
+                  <li>
+                    <span class="publications__grid-content-public-date">
+                      September 29
+                    </span>
+                  </li>
+                  <li>
+                    <hr class="publications__grid-content-dividing-line">
+                  </li>
+                  <li>
+                    <p class="publications__grid-content-short-description">
+                      And why the recovery of 50 million euros could be a fateful precedent According
+                      to Mind.ua January 21 National Commission for Data Protection.
+                    </p>
+                  </li>
+                </ul>
+              </li>
+              <li class="publications__grid-cell">
+                <div class="publications__grid-image-container">
+                  <img class="publications__grid-image" src="./assets/images/png/publications/publication-3.png"
+                       alt="illustration of cover">
+                </div>
+                <ul class="publications__grid-content-list">
+                  <li>
+                    <a class="publications__grid-content-link" href="publication.html">
+                      <h2 class="publications__grid-content-title">
+                        Millennial Testament
+                      </h2>
+                    </a>
+                  </li>
+                  <li>
+                    <span class="publications__grid-content-public-date">
+                      August 19
+                    </span>
+                  </li>
+                  <li>
+                    <hr class="publications__grid-content-dividing-line">
+                  </li>
+                  <li>
+                    <p class="publications__grid-content-short-description">
+                      What and how modern vloggers, opinion leaders and crypto-millionaires will
+                      inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…
+                    </p>
+                  </li>
+                </ul>
+              </li>
+              <li class="publications__grid-cell">
+                <div class="publications__grid-image-container">
+                  <img class="publications__grid-image" src="./assets/images/png/publications/publication-4.png"
+                       alt="illustration of cover">
+                </div>
+                <ul class="publications__grid-content-list">
+                  <li>
+                    <a class="publications__grid-content-link" href="publication.html">
+                      <h2 class="publications__grid-content-title">
+                        Language Law: How to Make Your Website Relevant
+                      </h2>
+                    </a>
+                  </li>
+                  <li>
+                    <span class="publications__grid-content-public-date">
+                      August 19
+                    </span>
+                  </li>
+                  <li>
+                    <hr class="publications__grid-content-dividing-line">
+                  </li>
+                  <li>
+                    <p class="publications__grid-content-short-description">
+                      Natalia Kyryk, head of content studio Wordfactory.ua Firstly, it's beautiful!
+                      This is the number one argument in favor of the Ukrainian-language site.
+                      Secondly, it is effective. IN…
+                    </p>
+                  </li>
+                </ul>
+              </li>
+              <li class="publications__grid-cell">
+                <div class="publications__grid-image-container">
+                  <img class="publications__grid-image" src="./assets/images/png/publications/publication-5.png"
+                       alt="illustration of cover">
+                </div>
+                <ul class="publications__grid-content-list">
+                  <li>
+                    <a class="publications__grid-content-link" href="publication.html">
+                      <h2 class="publications__grid-content-title">
+                        Reimbursement of the child's tuition fees in kindergarten and school
+                      </h2>
+                    </a>
+                  </li>
+                  <li>
+                    <span class="publications__grid-content-public-date">
+                      February 5, 2018
+                    </span>
+                  </li>
+                  <li>
+                    <hr class="publications__grid-content-dividing-line">
+                  </li>
+                  <li>
+                    <p class="publications__grid-content-short-description">
+                      What we are talking about In June this year, the Verkhovna Rada amended the Tax
+                      Code of Ukraine. From now on, parents who receive an official…
+                    </p>
+                  </li>
+                </ul>
+              </li>
+              <li class="publications__grid-cell">
+                <div class="publications__grid-image-container">
+                  <img class="publications__grid-image" src="./assets/images/png/publications/publication-6.png"
+                       alt="illustration of cover">
+                </div>
+                <ul class="publications__grid-content-list">
+                  <li>
+                    <a class="publications__grid-content-link" href="publication.html">
+                      <h2 class="publications__grid-content-title">
+                        Currency control is dead, long live currency control!
+                      </h2>
+                    </a>
+                  </li>
+                  <li>
+                    <span class="publications__grid-content-public-date">
+                      June 14, 2018
+                    </span>
+                  </li>
+                  <li>
+                    <hr class="publications__grid-content-dividing-line">
+                  </li>
+                  <li>
+                    <p class="publications__grid-content-short-description">
+                      Experts hold conferences, round tables and other events on "liberalization
+                      of currency legislation." Lawyers-experts-novelists rub their fingers
+                      about "ctrl + c / ctrl + v".
+                    </p>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="publications__item">
+            <a href="#" class="publications__button">
+              More publications
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer id="footer_template"></footer>
+<script src="scripts/include_templates.js"></script>
 </body>
 </html>
