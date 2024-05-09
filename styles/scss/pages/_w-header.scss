@@ -50,7 +50,7 @@
 
                 > .header__navigation-list {
                     margin-top: 30px;
-                    padding: 64px 20px;
+                    padding: 12px;
                     text-align: center;
                     background-color: white;
                     border-radius: 12px;
@@ -60,8 +60,31 @@
                         border-radius: 12px;
                         padding: 7px 0;
                         background-color: var(--bg-header-top);
+
                         &:hover {
                             background-color: var(--bg-link-mobile-hover);
+                        }
+                        &:first-child {
+                            display: flex;
+                            justify-content: end;
+                            background-color: var(--bg-light);
+
+                            .header__navigation-list-item-close {
+                                display: flex;
+                                width: 32px;
+                                height: 32px;
+                                border-radius: 8px;
+                                padding: 0;
+
+                                &:hover,
+                                &:focus {
+                                    background-color: var(--grey-separator_color);
+                                    cursor: pointer;
+                                }
+                                img {
+                                    margin: auto;
+                                }
+                            }
                         }
                     }
                 }

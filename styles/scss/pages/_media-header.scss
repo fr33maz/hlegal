@@ -48,6 +48,9 @@
                             padding-bottom: 4px;
                         }
                     }
+                    &:first-child {
+                        display: none;
+                    }
                 }
             }
         }
